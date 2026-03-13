@@ -29,7 +29,7 @@ export default function CinematicIntro({ onComplete }: CinematicIntroProps) {
       {/* Logo */}
       <div className="relative z-10 logo-container">
         <img
-          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663431089649/PMFipsbD3dT3Xo7JL4jygv/smun-logo_c49c8916.jpg"
+          src="/images/smun-logo.png"
           alt="SMUN Logo"
           className="w-52 md:w-64 object-contain drop-shadow-[0_0_35px_rgba(212,175,55,0.7)]"
         />

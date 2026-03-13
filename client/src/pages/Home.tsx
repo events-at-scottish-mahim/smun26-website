@@ -12,37 +12,37 @@ const committees: Committee[] = [
   {
     id: '1',
     name: 'United Nations Security Council',
-    agenda: 'Resolving international conflicts and maintaining global peace',
+    agenda: 'Terror in Sahel! Addressing the rise of extremist groups in the Sahel region.',
     difficulty: 'Advanced',
   },
   {
     id: '2',
-    name: 'World Health Organization',
-    agenda: 'Addressing global health crises and pandemic response',
+    name: 'The Duma',
+    agenda: 'The Bolshevik Revolution  (Freeze Date: 19th February 1918) ',
     difficulty: 'Intermediate',
   },
   {
     id: '3',
-    name: 'International Court of Justice',
-    agenda: 'Settling disputes between nations and upholding international law',
+    name: ' Middle East Regional Intelligence & Strategy Council (MERISC)',
+    agenda: ' Deliberating on the rising tensions in the Middle East.',
     difficulty: 'Advanced',
   },
   {
     id: '4',
-    name: 'United Nations General Assembly',
-    agenda: 'Discussing sustainable development and climate action',
+    name: 'United Nations Human Rights Council (UNHRC)',
+    agenda: 'Addressing the human rights violations in the Rwandan Genocide (1994)',
     difficulty: 'Beginner',
   },
   {
     id: '5',
-    name: 'UNESCO',
-    agenda: 'Promoting education, culture, and scientific cooperation',
+    name: '⁠Special Political and the Decolonization Committee  ( SPECPOL) ',
+    agenda: 'Evaluating the Implications of Unilateral Military Interventions in Venezuela.  ',
     difficulty: 'Intermediate',
   },
   {
     id: '6',
-    name: 'International Labour Organization',
-    agenda: 'Advancing workers\' rights and employment standards',
+    name: 'UN Commission on Crime Prevention and Criminal Justice',
+    agenda: 'Tackling Gang Wars in the Crime Capital of the World: El Salvador (Freeze Date: 31st December 2017)',
     difficulty: 'Beginner',
   },
 ];
@@ -146,32 +146,35 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {committees.map((committee) => (
               <div
-                key={committee.id}
-                className="glass-card p-6 hover:scale-105 transition-transform duration-300"
-              >
-                <h3 className="text-xl font-serif font-bold text-smun-gold mb-3">
-                  {committee.name}
-                </h3>
-                <p className="text-white/70 font-sans mb-4">
-                  {committee.agenda}
-                </p>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm font-sans uppercase tracking-widest text-white/50">
-                    Difficulty
-                  </span>
-                  <span
-                    className={`px-3 py-1 rounded-full text-sm font-serif font-bold ${
-                      committee.difficulty === 'Beginner'
-                        ? 'bg-green-500/20 text-green-300'
-                        : committee.difficulty === 'Intermediate'
-                          ? 'bg-yellow-500/20 text-yellow-300'
-                          : 'bg-red-500/20 text-red-300'
-                    }`}
-                  >
-                    {committee.difficulty}
-                  </span>
-                </div>
-              </div>
+  key={committee.id}
+  className="glass-card p-6 hover:scale-105 transition-transform duration-300 flex flex-col h-full"
+>
+  <h3 className="text-xl font-serif font-bold text-smun-gold mb-3">
+    {committee.name}
+  </h3>
+
+  <p className="text-white/70 font-sans mb-4">
+    {committee.agenda}
+  </p>
+
+  <div className="flex items-center justify-between mt-auto">
+    <span className="text-sm font-sans uppercase tracking-widest text-white/50">
+      Difficulty
+    </span>
+
+    <span
+      className={`px-3 py-1 rounded-full text-sm font-serif font-bold ${
+        committee.difficulty === "Beginner"
+          ? "bg-green-500/20 text-green-300"
+          : committee.difficulty === "Intermediate"
+          ? "bg-yellow-500/20 text-yellow-300"
+          : "bg-red-500/20 text-red-300"
+      }`}
+    >
+      {committee.difficulty}
+    </span>
+  </div>
+</div>
             ))}
           </div>
         </div>

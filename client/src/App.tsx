@@ -13,38 +13,42 @@ import Committees from "./pages/Committees";
 import Preparation from "./pages/Preparation";
 import Contact from "./pages/Contact";
 import DelegationPortal from "./pages/DelegationPortal";
+import ScrollToTop from "./components/ScrollToTop";
+import { motion, AnimatePresence } from "framer-motion";
+import { useLocation } from "wouter";
 
 function Router() {
+   const [location] = useLocation();
   return (
-    <Switch>
-      <Route path={"/"} component={Landing} />
-      <Route path={"/home"} component={Home} />
-      <Route path={"/about"} component={About} />
-      <Route path={"/committees"} component={Committees} />
-      <Route path={"/preparation"} component={Preparation} />
-      <Route path={"/contact"} component={Contact} />
-      <Route path={"/delegation-portal"} component={DelegationPortal} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
-      <Route component={NotFound} />
-    </Switch>
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={location}
+        initial={{ opacity: 0, y: 15 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -15 }}
+        transition={{ duration: 0.7, ease: "easeInOut" }}
+      >
+        <Switch location={location}>
+          <Route path="/" component={Landing} />
+          <Route path="/home" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/committees" component={Committees} />
+          <Route path="/preparation" component={Preparation} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/delegation-portal" component={DelegationPortal} />
+          <Route path="/404" component={NotFound} />
+          <Route component={NotFound} />
+        </Switch>
+      </motion.div>
+    </AnimatePresence>
   );
 }
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
-
-  useEffect(() => {
-    // Check if intro has been shown before
-    const introShown = localStorage.getItem("introShown");
-    if (introShown) {
-      setShowIntro(false);
-    }
-  }, []);
-
+  const [location] = useLocation();
   const handleIntroComplete = () => {
     setShowIntro(false);
-    localStorage.setItem("introShown", "true");
   };
 
   return (
@@ -53,7 +57,10 @@ function App() {
         <TooltipProvider>
           <Toaster />
           {showIntro && <CinematicIntro onComplete={handleIntroComplete} />}
-          <Router />
+        <ScrollToTop />
+
+              <Router />
+
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

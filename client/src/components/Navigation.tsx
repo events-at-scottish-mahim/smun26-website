@@ -20,7 +20,7 @@ export default function Navigation() {
         <Link href="/">
           <a className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <img
-              src="/images/IMG_4597.JPG-removebg-preview.png"
+              src="/images/smun-logo.png"
               alt="SMUN Logo"
               className="h-12 w-12 object-contain"
             />
@@ -79,7 +79,7 @@ export default function Navigation() {
                 className="px-6 py-2 bg-smun-gold text-smun-navy font-serif font-bold rounded-lg hover:bg-smun-gold-light transition-all duration-300 text-center"
                 onClick={() => setIsOpen(false)}
               >
-                Delegation Portal
+                REGISTER NOW
               </a>
             </Link>
           </div>

@@ -51,13 +51,6 @@ export default function Landing() {
           <CountdownTimer />
         </div>
 
-        {/* Enter Button */}
-        <button
-          onClick={() => navigate('/home')}
-          className="mt-4 px-10 py-4 bg-smun-gold text-smun-navy font-serif font-bold text-lg rounded-lg hover:bg-smun-gold-light transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
-        >
-          Enter the Conference
-        </button>
       </div>
     </div>
   );
