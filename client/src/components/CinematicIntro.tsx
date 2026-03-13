@@ -31,7 +31,10 @@ export default function CinematicIntro({ onComplete }: CinematicIntroProps) {
         <img
           src="/images/smun-logo.png"
           alt="SMUN Logo"
+          loading="eager"
+          decoding="sync"
           className="w-52 md:w-64 object-contain drop-shadow-[0_0_35px_rgba(212,175,55,0.7)] bg-transparent"
+          style={{ backgroundColor: "transparent", backgroundImage: "none" }}
         />
       </div>
 
