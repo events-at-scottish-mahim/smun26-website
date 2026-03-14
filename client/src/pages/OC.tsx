@@ -10,29 +10,244 @@ const goldDividerStyle = {
   margin: "32px 0",
 };
 
-const departments = Array.from({ length: 9 }, (_, i) => ({
-  name: `Department ${i + 1}`,
-  heads: [
+const departments = [
+  {
+    name: "Department 1",
+    heads: [
+      {
+        name: "Person 1",
+        img: "/images/person1.png",
+        quote: "My granny called",
+        position: "Head of Department",
+        description: "Person 1 leads the department and oversees operations.",
+      },
+      {
+        name: "Person 2",
+        img: "/images/person2.png",
+        quote: "She said travvy you work to hard",
+        position: "Deputy Head",
+        description: "Person 2 manages coordination and logistics.",
+      },
+      {
+        name: "Person 3",
+        img: "/images/person3.png",
+        quote: "Im worried you forget bout me",
+        position: "Coordinator",
+        description: "Person 3 assists with planning and communication.",
+      },
+    ],
+  },
+
+  {
+    name: "Department 2",
+    heads: [
+      {
+        name: "Person 4",
+        img: "/images/person4.png",
+        quote: "ball ball ball",
+        position: "Head",
+        description: "Responsible for managing this department.",
+      },
+      {
+        name: "Person 5",
+        img: "/images/person5.png",
+        quote: "Im fallin in n out of clouds dont worry imma get it granny",
+        position: "Deputy Head",
+        description: "Supports planning and coordination.",
+      },
+      {
+        name: "Person 6",
+        img: "/images/person6.png",
+        quote: "What happened now my daddy happy",
+        position: "Coordinator",
+        description: "Handles operational tasks.",
+      },
+    ],
+  },
+  {
+    name: "Department 3",
+    heads: [
+      {
+        name: "Person 7",
+        img: "/images/person4.png",
+        quote: "Mama called me up, that money comin and she love me",
+        position: "Head",
+        description: "Responsible for managing this department.",
+      },
+      {
+        name: "Person 8",
+        img: "/images/person5.png",
+        quote: "I done made it now, I done found life's meanin' now",
+        position: "Deputy Head",
+        description: "Supports planning and coordination.",
+      },
+      {
+        name: "Person 9",
+        img: "/images/person6.png",
+        quote: "All them days her heart'd break, her heart not in pieces now",
+        position: "Coordinator",
+        description: "Handles operational tasks.",
+      },
+    ],
+  },
+  {
+    name: "Department 4",
+    heads: [
+      {
+        name: "Person 10",
+        img: "/images/person4.png",
+        quote: "Friends turnin' into fraud people",
+        position: "Head",
+        description: "Responsible for managing this department.",
+      },
+      {
+        name: "Person 11",
+        img: "/images/person5.png",
+        quote: "Practicin' half the passion, you people packaged different",
+        position: "Deputy Head",
+        description: "Supports planning and coordination.",
+      },
+      {
+        name: "Person 12",
+        img: "/images/person6.png",
+        quote: "All you people, you people want the swag, you can't have it",
+        position: "Coordinator",
+        description: "Handles operational tasks.",
+      },
+    ],
+  },
     {
-      img: "videos/image.png",
-      quote: "Insert quote here",
-      position: "Head",
-      description: "Insert description here",
-    },
+    name: "Department 5",
+    heads: [
+      {
+        name: "Person 13",
+        img: "/images/person4.png",
+        quote: "I'ma sell it, your peoples salary, we 'bout to cap, lady",
+        position: "Head",
+        description: "Responsible for managing this department.",
+      },
+      {
+        name: "Person 14",
+        img: "/images/person5.png",
+        quote: "Youngest person out of Houston at the Grammys",
+        position: "Deputy Head",
+        description: "Supports planning and coordination.",
+      },
+      {
+        name: "Person 15",
+        img: "/images/person6.png",
+        quote: "Smilin' at 'em laughin' at me",
+        position: "Coordinator",
+        description: "Handles operational tasks.",
+      },
+    ],
+  },
     {
-      img: "videos/image.png",
-      quote: "Insert quote here",
-      position: "Head",
-      description: "Insert description here",
-    },
+    name: "Department 6",
+    heads: [
+      {
+        name: "Person 16",
+        img: "/images/person4.png",
+        quote: "I passed the rock to Ye, he pump faked, then passed it back, lady",
+        position: "Head",
+        description: "Responsible for managing this department.",
+      },
+      {
+        name: "Person 17",
+        img: "/images/person5.png",
+        quote: "All of this off of rappin', should've wrote this in Latin",
+        position: "Deputy Head",
+        description: "Supports planning and coordination.",
+      },
+      {
+        name: "Person 18",
+        img: "/images/person6.png",
+        quote: "(Ball, ball, ball in, in) Yeah-yeah",
+        position: "Coordinator",
+        description: "Handles operational tasks.",
+      },
+    ],
+  },
     {
-      img: "videos/image.png",
-      quote: "Insert quote here",
-      position: "Head",
-      description: "Insert description here",
-    },
-  ],
-}));
+    name: "Department 7",
+    heads: [
+      {
+        name: "Person 19",
+        img: "/images/person4.png",
+        quote: "Mmm, I know, I know, I know, I know, I know I know, I know, I know, I know, I know",
+        position: "Head",
+        description: "Responsible for managing this department.",
+      },
+      {
+        name: "Person 20",
+        img: "/images/person5.png",
+        quote: "Cuzzo said we hit the store, yeah, we 'bout to drop a four",
+        position: "Deputy Head",
+        description: "Supports planning and coordination.",
+      },
+      {
+        name: "Person 21",
+        img: "/images/person6.png",
+        quote: "He passed the sprite, I choke, woo",
+        position: "Coordinator",
+        description: "Handles operational tasks.",
+      },
+    ],
+  },
+      {
+    name: "Department 8",
+    heads: [
+      {
+        name: "Person 22",
+        img: "/images/person4.png",
+        quote: "Told my auntie, Put them 'Ports down, them 'Ports down",
+        position: "Head",
+        description: "Responsible for managing this department.",
+      },
+      {
+        name: "Person 23",
+        img: "/images/person5.png",
+        quote: "Now you know you love your own now",
+        position: "Deputy Head",
+        description: "Supports planning and coordination.",
+      },
+      {
+        name: "Person 24",
+        img: "/images/person6.png",
+        quote: "Hit the stage, they got their hands up, don't put your nose down",
+        position: "Coordinator",
+        description: "Handles operational tasks.",
+      },
+    ],
+  },
+      {
+    name: "Department 9",
+    heads: [
+      {
+        name: "Person 25",
+        img: "/images/person4.png",
+        quote: "I ain't knockin', person, I knocked the door down, for sure now",
+        position: "Head",
+        description: "Responsible for managing this department.",
+      },
+      {
+        name: "Person 26",
+        img: "/images/person5.png",
+        quote: "Great teams build great events.",
+        position: "Deputy Head",
+        description: "Supports planning and coordination.",
+      },
+      {
+        name: "Person 27",
+        img: "/images/person6.png",
+        quote: "Whole crew, I swear they countin' on me",
+        position: "Coordinator",
+        description: "Handles operational tasks.",
+      },
+    ],
+  },
+];
+
 
 const tabStyle = {
   minWidth: 220,
