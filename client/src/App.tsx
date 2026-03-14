@@ -10,6 +10,7 @@ import Landing from "./pages/Landing";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Committees from "./pages/Committees";
+import OC from "./pages/OC";
 import Preparation from "./pages/Preparation";
 import Contact from "./pages/Contact";
 import DelegationPortal from "./pages/DelegationPortal";
@@ -33,6 +34,7 @@ function Router() {
           <Route path="/home" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/committees" component={Committees} />
+          <Route path="/oc" component={OC} />
           <Route path="/preparation" component={Preparation} />
           <Route path="/contact" component={Contact} />
           <Route path="/delegation-portal" component={DelegationPortal} />
