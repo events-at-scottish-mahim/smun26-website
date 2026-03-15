@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Navigation from '@/components/Navigation';
+import React, { useCallback, useLayoutEffect, useRef, useState } from "react";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import Navigation from "@/components/Navigation";
 
 const goldDividerStyle = {
   background: "linear-gradient(90deg, #FFD700 0%, #FFFACD 100%)",
@@ -9,6 +8,60 @@ const goldDividerStyle = {
   border: "none",
   margin: "32px 0",
 };
+
+function FitText({
+  text,
+  className,
+  maxPx = 18,
+  minPx = 11,
+  style,
+}: {
+  text: string;
+  className?: string;
+  maxPx?: number;
+  minPx?: number;
+  style?: React.CSSProperties;
+}) {
+  const elementRef = useRef<HTMLParagraphElement | null>(null);
+  const [fontSizePx, setFontSizePx] = useState(maxPx);
+
+  const measureAndFit = useCallback(() => {
+    const el = elementRef.current;
+    if (!el) return;
+
+    el.style.fontSize = `${maxPx}px`;
+    let nextSize = maxPx;
+
+    // Shrink until it fits or we hit the minimum.
+    while (nextSize > minPx && (el.scrollHeight > el.clientHeight || el.scrollWidth > el.clientWidth)) {
+      nextSize -= 1;
+      el.style.fontSize = `${nextSize}px`;
+    }
+
+    setFontSizePx(nextSize);
+  }, [maxPx, minPx]);
+
+  useLayoutEffect(() => {
+    measureAndFit();
+    const el = elementRef.current;
+    if (!el) return;
+
+    const ro = new ResizeObserver(() => {
+      requestAnimationFrame(measureAndFit);
+    });
+
+    ro.observe(el);
+    if (el.parentElement) ro.observe(el.parentElement);
+
+    return () => ro.disconnect();
+  }, [measureAndFit, text]);
+
+  return (
+    <p ref={elementRef} className={className} style={{ ...style, fontSize: fontSizePx }}>
+      {text}
+    </p>
+  );
+}
 
 const departments = [
   {
@@ -248,30 +301,6 @@ const departments = [
   },
 ];
 
-
-const tabStyle = {
-  minWidth: 220,
-  minHeight: 320,
-  margin: "0 16px",
-  borderRadius: 12,
-  background: "#232323",
-  color: "#FFD700",
-  boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  cursor: "pointer",
-  padding: "24px 12px",
-};
-
-const dialogPaperStyle = {
-  borderRadius: 16,
-  background: "#232323",
-  color: "#FFD700",
-  padding: "32px",
-  maxWidth: 600,
-};
-
 const OC: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [selectedHead, setSelectedHead] = useState<any>(null);
@@ -281,10 +310,7 @@ const OC: React.FC = () => {
     setOpen(true);
   };
 
-  const handleClose = () => {
-    setOpen(false);
-    setSelectedHead(null);
-  };
+  const cardSizeClass = "w-[220px] h-[320px]";
 
   return (
     <div className="min-h-screen bg-smun-navy">
@@ -297,7 +323,7 @@ const OC: React.FC = () => {
         <p className="text-xl text-smun-gold font-serif text-center mb-12">
             Meet the team behing SMUN-26, the Organising Committee.
           </p>
-        {departments.map((dept, idx) => (
+        {departments.map((dept) => (
           <div key={dept.name} className="mb-12">
           <h5 className="text-smun-gold mb-4 text-xl font-semibold">
             {dept.name}
@@ -307,7 +333,7 @@ const OC: React.FC = () => {
             {dept.heads.map((head, i) => (
               <div
                 key={i}
-                className="min-w-[220px] min-h-[320px] mx-4 rounded-xl bg-[#232323] text-smun-gold shadow-lg flex flex-col items-center cursor-pointer p-6"
+                className={`${cardSizeClass} mx-4 rounded-xl bg-[#232323] text-smun-gold shadow-lg flex flex-col items-center cursor-pointer p-6 overflow-hidden`}
                 onClick={() => handleTabClick(head)}
               >
                 <img
@@ -315,12 +341,24 @@ const OC: React.FC = () => {
                   alt="Head"
                   className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-smun-gold"
                 />
-                <p className="text-smun-gold font-semibold mb-2 text-center">
-                  {head.quote}
-                </p>
-                <p className="text-smun-cream text-sm text-center">
-                  {head.position}
-                </p>
+                <FitText
+                  text={head.name}
+                  maxPx={20}
+                  minPx={14}
+                  className="w-full h-[52px] text-center font-bold leading-snug text-smun-gold"
+                />
+                <FitText
+                  text={head.position}
+                  maxPx={14}
+                  minPx={11}
+                  className="w-full h-[36px] text-center font-semibold leading-snug text-smun-cream"
+                />
+                <FitText
+                  text={head.quote}
+                  maxPx={13}
+                  minPx={10}
+                  className="w-full h-[80px] text-center leading-snug text-smun-cream/70"
+                />
               </div>
             ))}
           </div>
@@ -335,13 +373,16 @@ const OC: React.FC = () => {
                 <img
                   src={selectedHead.img}
                   alt="Head"
-                  className="w-45 h-45 rounded-full object-cover mb-4 border-4 border-smun-gold"
+                  className="w-48 h-48 rounded-full object-cover mb-4 border-4 border-smun-gold"
                 />
-                <p className="text-smun-gold font-semibold mb-2 text-center">
-                  {selectedHead.quote}
+                <p className="text-smun-gold font-bold text-2xl text-center leading-snug">
+                  {selectedHead.name}
                 </p>
-                <p className="text-smun-cream text-sm text-center">
+                <p className="text-smun-cream font-semibold text-base text-center mt-1">
                   {selectedHead.position}
+                </p>
+                <p className="text-smun-cream/70 text-sm text-center mt-3">
+                  {selectedHead.quote}
                 </p>
               </div>
               <div>

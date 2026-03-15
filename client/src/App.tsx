@@ -15,7 +15,7 @@ import Preparation from "./pages/Preparation";
 import Contact from "./pages/Contact";
 import DelegationPortal from "./pages/DelegationPortal";
 import ScrollToTop from "./components/ScrollToTop";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { useLocation } from "wouter";
 
 function Router() {
@@ -49,6 +49,7 @@ function Router() {
 function App() {
   const [showIntro, setShowIntro] = useState(true);
   const [location] = useLocation();
+  const reduceMotion = useReducedMotion();
   const handleIntroComplete = () => {
     setShowIntro(false);
   };
@@ -58,10 +59,27 @@ function App() {
       <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <Toaster />
-          {showIntro && <CinematicIntro onComplete={handleIntroComplete} />}
-        <ScrollToTop />
+          <AnimatePresence>
+            {showIntro && (
+              <motion.div
+                key="cinematic-intro"
+                initial={{ opacity: 1 }}
+                animate={{ opacity: 1 }}
+                exit={reduceMotion ? { opacity: 0 } : { opacity: 0, scale: 1.02 }}
+                transition={
+                  reduceMotion
+                    ? { duration: 0 }
+                    : { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
+                }
+                className="fixed inset-0 z-[9999]"
+              >
+                <CinematicIntro onComplete={handleIntroComplete} />
+              </motion.div>
+            )}
+          </AnimatePresence>
 
-              <Router />
+          <ScrollToTop />
+          <Router />
 
         </TooltipProvider>
       </ThemeProvider>
