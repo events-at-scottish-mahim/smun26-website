@@ -55,15 +55,15 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative pt-24 pb-20 px-4 min-h-screen flex items-center justify-center">
         <video
-  className="absolute inset-0 w-full h-full object-cover"
-  autoPlay
-  muted
-  loop
-  playsInline
->
-  <source src="/videos/JJBA Stardust Crusaders - Jotaro's New Power.mp4" type="video/mp4" />
-</video>
-<div className="absolute inset-0 bg-smun-navy opacity-60"></div>
+          className="absolute inset-0 z-0 w-full h-full object-cover brightness-75"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/videos/bgvid.webm" type="video/webm" />
+        </video>
+        <div className="pointer-events-none absolute inset-0 z-[1] bg-black/70" />
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6">
             Scottish Model United Nations 26
@@ -95,7 +95,7 @@ export default function Home() {
             <div className="flex justify-center">
               <div className="w-200 h-100 rounded-xl overflow-hidden border border-white/20 shadow-2xl backdrop-blur-xl">
                 <img
-                  src="/images/image.png"
+                  src="/images/OCP/Secretariat group.jpeg"
                   alt="Secretary General"
                   className="w-full h-full object-cover"
                 />
@@ -219,7 +219,7 @@ export default function Home() {
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 March 2026
+              28 April 2026
             </p>
           </div>
         </div>

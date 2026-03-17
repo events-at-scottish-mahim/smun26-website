@@ -65,237 +65,205 @@ function FitText({
 
 const departments = [
   {
-    name: "Department 1",
+    name:"Secretariat",
     heads: [
       {
-        name: "Person 1",
-        img: "/images/person1.png",
-        quote: "My granny called",
-        position: "Head of Department",
+        name:"Dhyan Jarianwala",
+        img: "/images/OCP/dhyan.png",
+        position: "Secretary-General",
+        description: "Introducing Dhyan Jariwala ,the kind of person who’s always calm, collected, and quietly in control. When he’s not out capturing moments through wildlife photography, you’ll probably find him keeping up with his favorite film Argo or just taking things in his signature cool way. Charismatic, cool and optimistic, Dhyan brings a steady and positive energy to everything he does. As the Secretary General, he’s the overall head of the event, overseeing and supervising all the work happening in SMUN and making sure everything stays on track.",
+      },
+      {
+        name:"Gaurika Agarwal",
+        img: "/images/OCP/gaurika.png",
+        position: "Director General of Committees",
+        description: "Meet Gaurika — part binge-watching pro, part tennis enthusiast, and full-time chaos curator. Whether she’s finishing “just one more episode” or dominating the court, she brings confidence and main character energy to everything she does. Observant, chaotic, and effortlessly in control, she handles logistics, procedures, and committee responsibilities with ease, keeping everything running smoothly. Catch her rewatching Psych, looping her favorite songs, or in her best mood with sushi.",
+      },
+      {
+        name:"Dia Jain",
+        img: "/images/OCP/dia.png",
+        position: "Deputy Director General of Committees",
+        description: "Meet Dia — the one who keeps every agenda sharp and every committee perfectly in sync. As the Deputy Director General of Committees, she’s the mind behind the structure, making sure every discussion has direction and every plan has purpose. An animal lover at heart and a sportsperson in spirit, Dia balances passion with empathy in everything she does. Whether she’s playing badminton, keeping up with the thrill of F1, or getting lost in a good book, she’s always ready for a spontaneous side quest. When she’s not managing committees, you’ll probably find her rewatching How I Met Your Mother, Kal Ho Naa Ho, or How to Lose a Guy in 10 Days with hot chocolate in hand and something sweet (or sushi) close by.",
+      },
+      {
+        name:"Hrishikesh Vishwanathan",
+        img: "/images/OCP/hrishikesh.jpeg",
+        position: "Director General of Administration",
+        description: "Meet Hrishikesh — the man who turns chaos into perfect coordination. Strategic, resourceful and always thinking three steps ahead, he’s the quiet force making sure every detail falls exactly where it should. From capturing the wild through his lens to smashing it on the badminton court, Hrishikesh brings passion and adventure into everything he does.When he’s not fine-tuning logistics, you’ll probably find him vibing to Channa Mereya, rewatching Zindagi Na Milegi Dobara or The Rookie, with a coffee in one hand and a slice of pizza not too far away. Calm under pressure and always ready with a plan, he’s the backbone behind the smooth running of it all.",
+      },
+      {
+        name:"Shaan Kanuga",
+        img: "/images/OCP/shaan.png",
+        position: "Director General of Administration",
+        description: "Introducing Shaan Kanuga — a sports stats whiz who probably knows more about tennis and cricket than the commentators. A fan of racket sports, jungle safaris, CSK, MS Dhoni, and Roger Federer, he brings calm confidence and a competitive edge to everything he does. Friendly, funny, and reliable, Shaan serves as Director General of Administration, ensuring all departments run smoothly. Whether he’s looping Bollywood songs, debating 3 Idiots vs ZNMD, or fueled by Red Bull, he keeps things balanced between chill and driven — often wrapping it up with sushi and a stop at Foo.",
+      },
+
+    ],
+  },
+  {
+    name: "Administration",
+    heads: [
+      {
+        name: "Aditi Manchandani",
+        img: "/images/OCP/aditi.jpeg",
+        position: "Head",
         description: "Person 1 leads the department and oversees operations.",
       },
       {
-        name: "Person 2",
-        img: "/images/person2.png",
-        quote: "She said travvy you work to hard",
+        name: "Devyani Parekh",
+        img: "/images/OCP/devyani.jpeg",
         position: "Deputy Head",
         description: "Person 2 manages coordination and logistics.",
       },
       {
-        name: "Person 3",
-        img: "/images/person3.png",
-        quote: "Im worried you forget bout me",
-        position: "Coordinator",
+        name: "Kimberly Dsouza",
+        img: "/images/OCP/kimberly.jpeg",
+        position: "Deputy Head",
         description: "Person 3 assists with planning and communication.",
       },
     ],
   },
 
   {
-    name: "Department 2",
+    name: "Finance",
     heads: [
       {
-        name: "Person 4",
-        img: "/images/person4.png",
-        quote: "ball ball ball",
+        name: "Vivaan Chakrabarti",
+        img: "/images/OCP/vivaan.png",
         position: "Head",
         description: "Responsible for managing this department.",
       },
       {
-        name: "Person 5",
-        img: "/images/person5.png",
-        quote: "Im fallin in n out of clouds dont worry imma get it granny",
+        name: "Vihaan Jain",
+        img: "/images/OCP/vihaan.png",
         position: "Deputy Head",
-        description: "Supports planning and coordination.",
-      },
-      {
-        name: "Person 6",
-        img: "/images/person6.png",
-        quote: "What happened now my daddy happy",
-        position: "Coordinator",
-        description: "Handles operational tasks.",
+        description: "Introducing,Vihaan Jain , a dynamic, pragmatic and competitive individual who enjoys balancing relaxation with sports. In his free time, he loves sleeping and playing cricket, basketball and pickleball. His favourite songs include “Music Is Better” by RÜFÜS DU SOL and “Paperplanes” by BUNT., while his favourite movies are Zindagi Na Milegi Dobara and Hera Pheri.As the Deputy Head of the Finance Department, he helps manage the event’s finances by handling budgets, tracking expenses, securing sponsorships and maintaining financial records, ensuring everything runs smoothly.",
       },
     ],
   },
   {
-    name: "Department 3",
+    name: "Technical Operations",
     heads: [
       {
-        name: "Person 7",
-        img: "/images/person4.png",
-        quote: "Mama called me up, that money comin and she love me",
+        name: "Shashank Rokade",
+        img: "/images/OCP/shashank.jpeg",
         position: "Head",
         description: "Responsible for managing this department.",
       },
       {
-        name: "Person 8",
-        img: "/images/person5.png",
-        quote: "I done made it now, I done found life's meanin' now",
+        name: "Sharan Dhanu",
+        img: "/images/OCP/sharan.jpeg",
         position: "Deputy Head",
         description: "Supports planning and coordination.",
       },
       {
-        name: "Person 9",
-        img: "/images/person6.png",
-        quote: "All them days her heart'd break, her heart not in pieces now",
-        position: "Coordinator",
-        description: "Handles operational tasks.",
+        name: "Aarav Krishna",
+        img: "/images/OCP/aarav.jpeg",
+        position: "Deputy Head",
+        description: "killer queen daisan no bakudan- bites the dust",
       },
     ],
   },
   {
-    name: "Department 4",
+    name: "Logistics",
     heads: [
       {
-        name: "Person 10",
-        img: "/images/person4.png",
-        quote: "Friends turnin' into fraud people",
-        position: "Head",
+        name: "Krishay Shreeram",
+        img: "/images/OCP/krishay.png",
+        position: "Co-head",
         description: "Responsible for managing this department.",
       },
       {
-        name: "Person 11",
-        img: "/images/person5.png",
-        quote: "Practicin' half the passion, you people packaged different",
-        position: "Deputy Head",
+        name: "Arrmaan Anand",
+        img: "/images/OCP/arrmaan.png",
+        position: "Co-head",
         description: "Supports planning and coordination.",
       },
       {
-        name: "Person 12",
-        img: "/images/person6.png",
-        quote: "All you people, you people want the swag, you can't have it",
-        position: "Coordinator",
-        description: "Handles operational tasks.",
+        name: "Sian Mehta",
+        img: "/images/OCP/sian.png",
+        position: "Deputy Head",
+        description: "Sian Mehta enjoys playing football, lawn tennis and pickleball in his free time. His favourite song is “Hurricane” by Kanye West, and he enjoys watching the action-comedy Rush Hour series, including Rush Hour, Rush Hour 2 and Rush Hour 3. Known for staying calm under pressure and demonstrating relentless endurance, Sian plays an important role as the Deputy Head of Logistics, helping coordinate resources and ensure the smooth execution of events behind the scenes.",
       },
     ],
   },
     {
-    name: "Department 5",
+    name: "Press",
     heads: [
       {
-        name: "Person 13",
-        img: "/images/person4.png",
-        quote: "I'ma sell it, your peoples salary, we 'bout to cap, lady",
+        name: "Sia Kini",
+        img: "/images/OCP/sia.png",
         position: "Head",
         description: "Responsible for managing this department.",
       },
+      
+    ],
+  },
+    {
+    name: "Photography",
+    heads: [
       {
-        name: "Person 14",
-        img: "/images/person5.png",
-        quote: "Youngest person out of Houston at the Grammys",
-        position: "Deputy Head",
-        description: "Supports planning and coordination.",
-      },
-      {
-        name: "Person 15",
-        img: "/images/person6.png",
-        quote: "Smilin' at 'em laughin' at me",
-        position: "Coordinator",
-        description: "Handles operational tasks.",
+        name: "Kartikeya Kathe",
+        img: "/images/OCP/kartik.png",
+        position: "Head",
+        description: "Meet Kartikeya — the man behind the lens and the action. Whether he’s dominating the football field, smashing a badminton rally, or strumming his guitar, he brings the same passion everywhere he goes. A wildlife photographer for over a decade, Kartikeya has mastered the art of turning fleeting moments into timeless frames.When he’s not capturing the perfect shot, he’s probably listening to Bazooka or Dracula, or diving into magical worlds like Harry Potter and epic anime like One Piece. Magnanimous, altruistic, and benevolent — three words that define both his spirit and the way he sees the world.",
       },
     ],
   },
     {
-    name: "Department 6",
+    name: "Hospitality",
     heads: [
       {
-        name: "Person 16",
-        img: "/images/person4.png",
-        quote: "I passed the rock to Ye, he pump faked, then passed it back, lady",
+        name: "Sambhav Sharma",
+        img: "/images/OCP/sambhav.png",
         position: "Head",
         description: "Responsible for managing this department.",
       },
       {
-        name: "Person 17",
-        img: "/images/person5.png",
-        quote: "All of this off of rappin', should've wrote this in Latin",
+        name: "Yug Karia",
+        img: "/images/OCP/yug.png",
         position: "Deputy Head",
         description: "Supports planning and coordination.",
       },
       {
-        name: "Person 18",
-        img: "/images/person6.png",
-        quote: "(Ball, ball, ball in, in) Yeah-yeah",
-        position: "Coordinator",
-        description: "Handles operational tasks.",
-      },
-    ],
-  },
-    {
-    name: "Department 7",
-    heads: [
-      {
-        name: "Person 19",
-        img: "/images/person4.png",
-        quote: "Mmm, I know, I know, I know, I know, I know I know, I know, I know, I know, I know",
-        position: "Head",
-        description: "Responsible for managing this department.",
-      },
-      {
-        name: "Person 20",
-        img: "/images/person5.png",
-        quote: "Cuzzo said we hit the store, yeah, we 'bout to drop a four",
+        name: "Yashvir Shah",
+        img: "/images/OCP/yashvir.png",
         position: "Deputy Head",
-        description: "Supports planning and coordination.",
-      },
-      {
-        name: "Person 21",
-        img: "/images/person6.png",
-        quote: "He passed the sprite, I choke, woo",
-        position: "Coordinator",
         description: "Handles operational tasks.",
       },
     ],
   },
       {
-    name: "Department 8",
+    name: "Design",
     heads: [
       {
-        name: "Person 22",
-        img: "/images/person4.png",
-        quote: "Told my auntie, Put them 'Ports down, them 'Ports down",
-        position: "Head",
+        name: "Naisha Doshi",
+        img: "/images/OCP/naisha.png",
+        position: "Co-Head",
         description: "Responsible for managing this department.",
       },
       {
-        name: "Person 23",
-        img: "/images/person5.png",
-        quote: "Now you know you love your own now",
-        position: "Deputy Head",
+        name: "Janyaa Patkar",
+        img: "/images/OCP/janyaa.png",
+        position: "Co-Head",
         description: "Supports planning and coordination.",
-      },
-      {
-        name: "Person 24",
-        img: "/images/person6.png",
-        quote: "Hit the stage, they got their hands up, don't put your nose down",
-        position: "Coordinator",
-        description: "Handles operational tasks.",
       },
     ],
   },
       {
-    name: "Department 9",
+    name: "Public Relations",
     heads: [
       {
-        name: "Person 25",
-        img: "/images/person4.png",
-        quote: "I ain't knockin', person, I knocked the door down, for sure now",
+        name: "Samika Agarwal",
+        img: "/images/OCP/samika.png",
         position: "Head",
         description: "Responsible for managing this department.",
       },
       {
-        name: "Person 26",
-        img: "/images/person5.png",
-        quote: "Great teams build great events.",
+        name: "Pia Punwani",
+        img: "/images/OCP/prpia.png",
         position: "Deputy Head",
         description: "Supports planning and coordination.",
-      },
-      {
-        name: "Person 27",
-        img: "/images/person6.png",
-        quote: "Whole crew, I swear they countin' on me",
-        position: "Coordinator",
-        description: "Handles operational tasks.",
       },
     ],
   },
@@ -353,12 +321,6 @@ const OC: React.FC = () => {
                   minPx={11}
                   className="w-full h-[36px] text-center font-semibold leading-snug text-smun-cream"
                 />
-                <FitText
-                  text={head.quote}
-                  maxPx={13}
-                  minPx={10}
-                  className="w-full h-[80px] text-center leading-snug text-smun-cream/70"
-                />
               </div>
             ))}
           </div>
@@ -367,22 +329,19 @@ const OC: React.FC = () => {
 
       <Dialog open={open} onOpenChange={setOpen}>
         {selectedHead && (
-          <DialogContent className="bg-[#232323] text-smun-gold p-8 rounded-xl max-w-2xl">
+          <DialogContent className="bg-[#232323] text-smun-gold p-8 rounded-xl sm:max-w-4xl lg:max-w-4xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
               <div className="flex flex-col items-center">
                 <img
                   src={selectedHead.img}
                   alt="Head"
-                  className="w-48 h-48 rounded-full object-cover mb-4 border-4 border-smun-gold"
+                  className="w-70 h-70 rounded-full object-cover mb-4 border-4 border-smun-gold"
                 />
                 <p className="text-smun-gold font-bold text-2xl text-center leading-snug">
                   {selectedHead.name}
                 </p>
                 <p className="text-smun-cream font-semibold text-base text-center mt-1">
                   {selectedHead.position}
-                </p>
-                <p className="text-smun-cream/70 text-sm text-center mt-3">
-                  {selectedHead.quote}
                 </p>
               </div>
               <div>

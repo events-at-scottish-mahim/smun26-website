@@ -97,10 +97,10 @@ export default function DelegationPortal() {
 
             <div className="glass-card p-6">
               <h3 className="text-xl font-serif font-bold text-smun-gold mb-4">
-                Position Paper Submission
+                Agenda Research
               </h3>
               <p className="text-white/80 font-sans">
-                (Ai told me to put ts) Submit your position paper along with your registration. Guidelines are available on the Preparation & Registration page.
+                Thoroughly research the agenda items and develop a comprehensive understanding of the issues at hand.This will allow you to select your preferred allotment for the committee.
               </p>
             </div>
 
@@ -109,7 +109,7 @@ export default function DelegationPortal() {
                 Confirmation Email
               </h3>
               <p className="text-white/80 font-sans">
-                You will receive a confirmation email after successful registration (will they? do we have the budget gng). Check your spam folder if you don't see it.
+                You will receive a confirmation email after successful registration . Check your spam folder if you don't see it.
               </p>
             </div>
           </div>
@@ -184,7 +184,7 @@ export default function DelegationPortal() {
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 March 2026
+              28 April 2026
             </p>
           </div>
         </div>

@@ -11,37 +11,37 @@ const committees: Committee[] = [
   {
     id: '1',
     name: 'United Nations Security Council',
-    agenda: 'Resolving international conflicts and maintaining global peace',
+    agenda: 'Terror in Sahel! Addressing the rise of extremist groups in the Sahel region.',
     difficulty: 'Advanced',
   },
   {
     id: '2',
-    name: 'World Health Organization',
-    agenda: 'Addressing global health crises and pandemic response',
+    name: 'The Duma',
+    agenda: 'The Bolshevik Revolution  (Freeze Date: 19th February 1918) ',
     difficulty: 'Intermediate',
   },
   {
     id: '3',
-    name: 'International Court of Justice',
-    agenda: 'Settling disputes between nations and upholding international law',
+    name: ' Middle East Regional Intelligence & Strategy Council (MERISC)',
+    agenda: ' Deliberating on the rising tensions in the Middle East.',
     difficulty: 'Advanced',
   },
   {
     id: '4',
-    name: 'United Nations General Assembly',
-    agenda: 'Discussing sustainable development and climate action',
+    name: 'United Nations Human Rights Council (UNHRC)',
+    agenda: 'Addressing the human rights violations in the Rwandan Genocide (1994)',
     difficulty: 'Beginner',
   },
   {
     id: '5',
-    name: 'UNESCO',
-    agenda: 'Promoting education, culture, and scientific cooperation',
+    name: '⁠Special Political and the Decolonization Committee  ( SPECPOL) ',
+    agenda: 'Evaluating the Implications of Unilateral Military Interventions in Venezuela.  ',
     difficulty: 'Intermediate',
   },
   {
     id: '6',
-    name: 'International Labour Organization',
-    agenda: 'Advancing workers\' rights and employment standards',
+    name: 'UN Commission on Crime Prevention and Criminal Justice',
+    agenda: 'Tackling Gang Wars in the Crime Capital of the World: El Salvador (Freeze Date: 31st December 2017)',
     difficulty: 'Beginner',
   },
 ];
@@ -70,12 +70,12 @@ export default function Preparation() {
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-smun-gold mb-8 text-center">
-            Position Papers
+            Study Guides
           </h2>
           <p className="text-lg text-white/90 mb-8 font-sans leading-relaxed text-center">
-            Position papers are a crucial part of your preparation. They demonstrate your understanding of your country's stance on key issues and help you engage in meaningful debate.
+            Coming soon!
           </p>
-          <div className="grid md:grid-cols-2 gap-6">
+          {/* <div className="grid md:grid-cols-2 gap-6">
             <div className="glass-card p-6">
               <h3 className="text-xl font-serif font-bold text-smun-gold mb-4">
                 Position Paper Guidelines
@@ -97,8 +97,10 @@ export default function Preparation() {
               <button className="px-6 py-2 bg-smun-gold text-smun-navy font-serif font-bold rounded-lg hover:bg-smun-gold-light transition-all duration-300">
                 Download Sample
               </button>
+              
             </div>
           </div>
+          */}
         </div>
       </section>
 
@@ -129,7 +131,7 @@ export default function Preparation() {
                 </div>
               </div>
             </div>
-
+            {/*
             <div className="glass-card p-8">
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
@@ -144,15 +146,16 @@ export default function Preparation() {
                   <p className="text-white/80 font-sans">
                     Write a compelling position paper outlining your country's stance on the committee agenda.
                   </p>
-                </div>
+                </div> 
               </div>
             </div>
+            */}
 
             <div className="glass-card p-8">
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-smun-gold/20">
-                    <span className="text-smun-gold font-serif font-bold text-lg">3</span>
+                    <span className="text-smun-gold font-serif font-bold text-lg">2</span>
                   </div>
                 </div>
                 <div>
@@ -160,7 +163,7 @@ export default function Preparation() {
                     Submit Your Application
                   </h3>
                   <p className="text-white/80 font-sans">
-                    Complete the registration form and submit your position paper before the deadline.
+                    Complete the registration form and submit preferences before the deadline.
                   </p>
                 </div>
               </div>
@@ -178,7 +181,7 @@ export default function Preparation() {
                     Attend the Conference
                   </h3>
                   <p className="text-white/80 font-sans">
-                    Join us on 28 March 2026 for an unforgettable experience in diplomacy and international relations.
+                    Join us on 28 April 2026 for an unforgettable experience in diplomacy and international relations.
                   </p>
                 </div>
               </div>
@@ -249,7 +252,7 @@ export default function Preparation() {
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 March 2026
+              28 April 2026
             </p>
           </div>
         </div>

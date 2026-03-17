@@ -226,7 +226,7 @@ export default function Contact() {
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 March 2026
+              28 April 2026
             </p>
           </div>
         </div>

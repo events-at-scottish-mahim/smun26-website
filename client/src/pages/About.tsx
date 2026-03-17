@@ -24,13 +24,21 @@ export default function About() {
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-serif font-bold text-smun-gold mb-8 text-center">
-            Our Mission
+            Welcome, Delegates!
           </h2>
           <p className="text-lg text-white/90 font-sans leading-relaxed mb-6">
-            Scottish Model United Nations is dedicated to fostering diplomatic excellence and international understanding among young leaders. We believe that through meaningful dialogue, rigorous debate, and collaborative problem-solving, we can develop the next generation of global citizens.
+            Esteemed participants, we welcome you to the captivating fourteenth edition of SMUN, where the convergence of competition and collaboration, contention and cooperation and discourse and dissension take center stage.
           </p>
-          <p className="text-lg text-white/90 font-sans leading-relaxed">
-            Our conference provides a platform for students to develop critical thinking, public speaking, and negotiation skills while engaging with real-world global issues. We strive to create an environment where diverse perspectives are valued and where delegates can challenge themselves intellectually and personally.
+          <p className="text-lg text-white/90 font-sans leading-relaxed mb-6">
+            We invite you to unveil your unique perspectives on global issues by making full use of the platform provided by SMUN. Here’s your chance to wield your arsenal of arguments to sway, transform, or convert diverse viewpoints into concrete, actionable solutions that propel the boundaries of your respective committees forward, mirroring the dynamics of genuine global fora.
+          </p>
+          <p className="text-lg text-white/90 font-sans leading-relaxed mb-6 ">
+            Model United Nations (MUN) stands as a beacon of understanding and advocacy, cultivating the next generation of diplomats, leaders, and changemakers. It serves as a crucible wherein participants are tasked with embodying the roles of diplomats, representing nations, and navigating the intricate web of international relations.
+          </p>
+          <p className="text-lg text-white/90 font-sans leading-relaxed mb-6">
+          This immersive environment is what SMUN aspires to elevate into a transformative experience, guiding participants toward excellence while fostering enduring connections and impactful contributions to global dialogue.
+
+To every one of you, prepare to embark on a Diplomatic Discourse unlike any other - fasten your seatbelts, for SMUN awaits!
           </p>
         </div>
       </section>
@@ -47,7 +55,7 @@ export default function About() {
           <div className="space-y-6">
             <div className="glass-card p-6">
               <h3 className="text-xl font-serif font-bold text-smun-gold mb-2">
-                Founded in 2077
+                Founded in 2012
               </h3>
               <p className="text-white/80 font-sans">
                 SMUN began as a small initiative at Bombay Scottish School to introduce students to the world of Model United Nations. What started with just a handful of delegates has grown into one of India's premier MUN conferences.
@@ -59,7 +67,7 @@ export default function About() {
                 Growing Reach
               </h3>
               <p className="text-white/80 font-sans">
-                Over the years, SMUN has attracted delegations from across India (I think..?). We've hosted hundreds of delegates and created countless memorable experiences and lasting friendships.
+                Over the years, SMUN has attracted delegations from across multiple backgrounds. We've hosted hundreds of delegates and created countless memorable experiences and lasting friendships.
               </p>
             </div>
 
@@ -82,7 +90,7 @@ export default function About() {
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-serif font-bold text-smun-gold mb-12 text-center">
-            Our Core Values (I think..?)(AI generated for now pls change later)
+            Our Core Values 
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="glass-card p-8">
@@ -220,7 +228,7 @@ export default function About() {
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 March 2026
+              28 April 2026
             </p>
           </div>
         </div>

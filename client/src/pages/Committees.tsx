@@ -12,44 +12,47 @@ const committees: Committee[] = [
   {
     id: '1',
     name: 'United Nations Security Council',
-    agenda: 'Resolving international conflicts and maintaining global peace',
+    agenda: 'Terror in Sahel! Addressing the rise of extremist groups in the Sahel region.',
     difficulty: 'Advanced',
-    description: 'The most prestigious and challenging committee. Delegates represent permanent and non-permanent members of the UNSC and grapple with critical geopolitical issues.',
+    description:'The Sahel region, which includes Burkina Faso, Mali, Niger, and Chad, struggles with rising terrorism from jihadist organisations like JNIM and ISGS, which fuels insurgencies, displacement, and state fragility in the face of resource conflicts and porous borders brought on by climate change. Attacks on civilians, military installations, and relief workers have increased, causing instability in the area and endangering international security through arms trafficking and migration waves. With a focus on counterterrorism tactics, peacekeeping improvements like the development of MINUSMA, sanctions, and multinational forces to restore stability, this Semi-Crisis UN Security Council committee engages in substantive discussions, resolution drafting, and targeted crises.IIf extremist groups control territory, taxation, and populations, are we witnessing terrorism—or the rise of parallel states?',
   },
   {
     id: '2',
-    name: 'World Health Organization',
-    agenda: 'Addressing global health crises and pandemic response',
+    name: 'The Duma',
+    agenda: 'The Bolshevik Revolution  (Freeze Date: 19th February 1918) ',
     difficulty: 'Intermediate',
-    description: 'Focus on international health cooperation, disease prevention, and emergency response. Highly relevant to contemporary global challenges.',
+    description: 'The Duma, Russia\'s imperial parliament, formed in 1905, became a battleground during the Bolshevik Revolution when radical issues confronted the Provisional Government amidst the chaos of World War I, economic collapse, and popular discontent. By early 1918, the Bolsheviks, led by Lenin, had seized power in the October Revolution, disbanded the Constituent Assembly, and faced the possibility of civil war, signing the Treaty of Brest-Litovsk to stop the conflict. This Continuous Crisis Committee simulates talks leading up to the freeze date of February 19, 1918, in which delegates navigate power battles, peace negotiations, and revolutionary policies while debating Russia\'s future. Can Russia attain peace and stability or will this revolution inevitably cause its downfall?',
+
   },
   {
     id: '3',
-    name: 'International Court of Justice',
-    agenda: 'Settling disputes between nations and upholding international law',
+    name: ' Middle East Regional Intelligence & Strategy Council (MERISC)',
+    agenda: ' Deliberating on the rising tensions in the Middle East.',
     difficulty: 'Advanced',
-    description: 'A unique committee where delegates argue cases before the court. Requires strong legal knowledge and argumentation skills.',
+    description:'The Middle East continues to experience profound instability, originating from the protracted Israel-Hamas conflict initiated in 2023 and intensified by Iranian-supported proxy activities across Yemen, Syria, Lebanon, and Iraq, which have evolved into broader regional confrontations. Recent developments prominently feature coordinated U.S.-Israeli airstrikes on Iranian nuclear facilities and Islamic Revolutionary Guard Corps command structures commencing in mid-2025, compounded by sustained Houthi assaults on Red Sea shipping lanes, recurrent Israel-Hezbollah border skirmishes, and prospective threats to the Strait of Hormuz. This Continuous Crisis Committee will deliberate upon intelligence-sharing, de-escalation tactics, counter-proxy measures, and strategic alliances for stability. How long can the world ignore the risk that disruptions in the Strait of Hormuz could destabilize the global economy?',
   },
   {
     id: '4',
-    name: 'United Nations General Assembly',
-    agenda: 'Discussing sustainable development and climate action',
+    name: 'United Nations Human Rights Council (UNHRC)',
+    agenda: 'Addressing the human rights violations in the Rwandan Genocide (1994)',
     difficulty: 'Beginner',
-    description: 'The most inclusive committee, perfect for first-time delegates. Covers a wide range of global issues and allows for diverse participation.',
+    description: 'The 1994 Rwandan Genocide saw Hutu extremists slaughter around 800,000 Tutsis and moderate Hutus in 100 days, marked by machete massacres, rape as a weapon, and systematic ethnic cleansing amid radio-fueled propaganda and collapsed state institutions. Post-genocide, the International Criminal Tribunal for Rwanda prosecuted leaders, but accountability gaps persist in reparations, survivor trauma, and reconciliation. As a fully Humanitarian Committee, the UNHRC will examine violations like mass killings and sexual violence, advocating victim-centered justice, truth commissions, and prevention frameworks to address ongoing ethnic tensions and human rights violations. Does the pursuit of international legal justice actually facilitate ethnic cleansing and healing, or does it simply institutionalize the grievances that led to the machetes in the first place?',
+
   },
   {
     id: '5',
-    name: 'UNESCO',
-    agenda: 'Promoting education, culture, and scientific cooperation',
+    name: '⁠Special Political and the Decolonization Committee  ( SPECPOL) ',
+    agenda: 'Evaluating the Implications of Unilateral Military Interventions in Venezuela.  ',
     difficulty: 'Intermediate',
-    description: 'Focus on cultural preservation, educational access, and scientific advancement. Ideal for those passionate about global development.',
+    description:'Venezuela\'s crisis, exacerbated by economic collapse, hyperinflation, and political deadlock under Maduro, has sparked unilateral military interventions like alleged covert operations or border incursions, raising sovereignty concerns amid refugee flows and humanitarian collapse. These actions risk escalating regional tensions, violating non-intervention principles, and complicating decolonization legacies in Latin America. As a fully Humanitarian Committee, this committee will assess intervention impacts on civilians, human rights, and self-determination, proposing diplomatic safeguards, aid corridors, and UN-monitored resolutions to prioritize relief over force. Can a foreign military actually save a democracy or is it just an intervention for old regime changes and hidden motives?',
   },
   {
     id: '6',
-    name: 'International Labour Organization',
-    agenda: 'Advancing workers\' rights and employment standards',
+    name: 'UN Commission on Crime Prevention and Criminal Justice',
+    agenda: 'Tackling Gang Wars in the Crime Capital of the World: El Salvador (Freeze Date: 31st December 2017)',
     difficulty: 'Beginner',
-    description: 'Explore labor rights, fair wages, and working conditions globally. Great for understanding social and economic justice issues.',
+    description: 'El Salvador, dubbed the "murder capital," faced rampant gang violence from MS-13 and Barrio 18, with homicide rates rampantly increasing due to extortion rackets, territorial turf wars, and youth recruitment amid poverty and weak policing. By the freeze date, government crackdowns like mega-prisons offered temporary relief but fueled cycles of retaliation and prison riots. As a fully Humanitarian Committee, the UNCCPCJ will address root causes through prevention strategies, rehabilitation programs, community policing, and international cooperation.  If the only way to stop a war on the streets is to turn the entire country into a prison, have we won or simply chosen to ‘bar’ the entire situation behind?',
+
   },
 ];
 
@@ -228,7 +231,7 @@ export default function Committees() {
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 March 2026
+              28 April 2026
             </p>
           </div>
         </div>
